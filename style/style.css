@@ -1025,7 +1025,9 @@ footer p {
     margin-right: 10px;
     transition: all 0.5s;
 }
-
+.dark .footer__social a {
+    background-color: #232220;
+}
 .footer__social a:hover {
     background-color: #ff6600;
     color: white;
@@ -1068,6 +1070,13 @@ footer ul li {
     outline: none;
     color: rgba(22, 28, 45, 0.7);
     border-radius: 6px;
+}
+.form-control:focus {
+    border-color: #ff6600;
+    box-shadow: none;
+}
+.dark footer .form-control {
+    background-color: #232220;
 }
 
 footer .btn {
