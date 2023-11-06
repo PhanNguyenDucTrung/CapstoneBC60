@@ -82,6 +82,7 @@ ul {
 .dark .header__right input {
     background-color: #232220;
     border: 1px solid #232220;
+    color: #eee;
 }
 
 .header__right .search__icon {
