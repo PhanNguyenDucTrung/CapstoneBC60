@@ -962,9 +962,6 @@ blockquote q {
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 0;
 }
-.feedback__content .feedback__item p {
-    color: #c2d0da;
-}
 
 .feedback__content .people__info h3 {
     font-size: 20px;
@@ -1135,6 +1132,13 @@ footer .btn {
     bottom: 55px;
     color: white;
     transition: 0.3s ease-out;
+    z-index: 99;
+}
+.backToTop:hover {
+    color: #fff;
+}
+.cd-top--fade-out {
+    opacity: 0.1;
 }
 /* reponsive  */
 @media screen and (max-width: 1190px) {
@@ -1193,6 +1197,9 @@ footer .btn {
 }
 
 @media screen and (max-width: 600px) {
+    .feedback__content .feedback__item p {
+        font-size: 16px;
+    }
     .search-field {
         display: none;
     }
@@ -1209,6 +1216,9 @@ footer .btn {
         font-size: 18px;
         line-height: 28px;
     }
+    .stats .statsItem .statsCounter .counter {
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1224,5 +1234,27 @@ footer .btn {
     .carousel__info h2 {
         font-size: 28px;
         line-height: 38px;
+    }
+    .stats .statsItem .statsCounter .counterText {
+        font-size: 0.9em;
+    }
+
+    .infor .inforText h3 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .feedback__Text {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .agent .agentTitle {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+    .agent .agentContent {
+        font-size: 24px;
+        line-height: 34px;
     }
 }
